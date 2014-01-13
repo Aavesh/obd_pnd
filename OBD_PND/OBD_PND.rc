@@ -1,0 +1,252 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\OBD_PND.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OBD_PND.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OBD_PND_DIALOG DIALOG  0, 0, 130, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 9, "MS Shell Dlg"
+BEGIN
+END
+
+IDD_OBD_PND_DIALOG_LOG DIALOG  0, 0, 527, 190
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         IDC_LIST1,0,27,393,162,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "HIDE",IDC_BUTTON_EXIT,4,2,38,24
+    PUSHBUTTON      "Show",IDC_BUTTON_COM,45,2,38,24
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,86,2,38,24
+    PUSHBUTTON      "Reset",IDC_BUTTON_RESET,127,2,38,24
+    CONTROL         "OBD数据",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,3,46,10
+    CONTROL         "GPS数据",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,15,45,10
+END
+
+IDD_OBD_PND_DIALOG_SEL_FILE DIALOG  0, 0, 162, 136
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 16, "Microsoft Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST1,2,2,158,113,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确  定",IDC_BUTTON_OK,3,116,77,19
+    PUSHBUTTON      "取  消",IDC_BUTTON_CANCEL,82,116,77,19
+END
+
+IDD_OBD_PND_DIALOG_CHILD DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "OBD_PND.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "OBD_PND.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OBD_PND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_OBD_PND_DIALOG_SEL_FILE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_OBD_PND_DIALOG_CHILD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_PNG_UNIT_V_800X480  PNG                     "res\\800X480\\单位_伏_800x480.png"
+IDR_PNG_UNIT_T_800X480  PNG                     "res\\800X480\\单位-度_800x480.png"
+IDR_PNG_UNIT_RPM_800X480 PNG                     "res\\800X480\\单位_转速_800x480.png"
+IDR_PNG_UNIT_PERCENT_800X480 PNG                     "res\\800X480\\单位_百分号_800x480.png"
+IDR_PNG_UNIT_MV_800X480 PNG                     "res\\800X480\\单位_豪伏_800x480.png"
+IDR_PNG_UNIT_MS_800X480 PNG                     "res\\800X480\\单位_毫秒_800x480.png"
+IDR_PNG_UNIT_MONETARY_800X480 PNG                     "res\\800X480\\单位_金额_800x480.png"
+IDR_PNG_UNIT_L_H_800X480 PNG                     "res\\800X480\\单位_每小时升_800x480.png"
+IDR_PNG_UNIT_L_100KM_800X480 PNG                     "res\\800X480\\单位_每百公里升_800x480.png"
+IDR_PNG_UNIT_KM_H_800X480 PNG                     "res\\800X480\\单位_每小时公里_800x480 .png"
+IDR_PNG_UNIT_KM_800X480 PNG                     "res\\800X480\\单位_公里_800x480.png"
+IDR_PNG_UNIT_C_800X480  PNG                     "res\\800X480\\单位_摄氏度_800x480.png"
+IDR_PNG_TIP_INFO_800X480 PNG                     "res\\800X480\\信息提示_800X480.png"
+IDR_PNG_MODE_TOUR_800X480 PNG                     "res\\800X480\\巡航模式_800X480.png"
+IDR_PNG_MODE_RACE_800X480 PNG                     "res\\800X480\\竞技模式_800X480.png"
+IDR_PNG_MODE_IDLE_800X480 PNG                     "res\\800X480\\怠速模式_800X480.png"
+IDR_PNG_MODE_DETAIL_800X480 PNG                     "res\\800X480\\行车明细_800X480.png"
+IDR_PNG_LINE_V_LONG_800X480 PNG                     "res\\800X480\\竖线-长_800X480.png"
+IDR_PNG_LINE_H_SHORT_800X480 PNG                     "res\\800X480\\横线-短_800X480.png"
+IDR_PNG_LINE_H_LONG_800X480 PNG                     "res\\800X480\\横线-长_800X480.png"
+IDR_PNG_GRID_800X480    PNG                     "res\\800X480\\项目选择_800X480.png"
+IDR_PNG_CONFIG_FUEL_PRICE_800X480 PNG                     "res\\800X480\\设置图标-油耗-油价调整_800X480.png"
+IDR_PNG_CONFIG_FUEL_ENTER_800X480 PNG                     "res\\800X480\\设置图标-油耗-输入油量_800X480.png"
+IDR_PNG_CONFIG_FUEL_CLEAR_800X480 PNG                     "res\\800X480\\设置图标-油耗-油耗清零_800X480.png"
+IDR_PNG_CONFIG_FUEL_CALIBRATION_800X480 PNG                     "res\\800X480\\设置图标-油耗-油耗校准_800X480.png"
+IDR_PNG_CONFIG_DEVICES_VERSION_800X480 PNG                     "res\\800X480\\设置图标_版本信息_800X480.png"
+IDR_PNG_CONFIG_DEVICES_LANGUAGE_800X480 PNG                     "res\\800X480\\设置图标-语言设置_800X480.png"
+IDR_PNG_CONFIG_DEVICES_FACTORY_SET_800X480 PNG                     "res\\800X480\\设置图标_出厂设置_800X480.png"
+IDR_PNG_CONFIG_ALARM_WATER_TEMP_800X480 PNG                     "res\\800X480\\设置图标-报警-水温_800X480.png"
+IDR_PNG_CONFIG_ALARM_TROUBLE_800X480 PNG                     "res\\800X480\\设置图标-报警-故障_800X480.png"
+IDR_PNG_CONFIG_ALARM_OVERSPEED_800X480 PNG                     "res\\800X480\\设置图标-报警-超速_800X480.png"
+IDR_PNG_CONFIG_ALARM_FATIGUE_DRIVING_800X480 PNG                     "res\\800X480\\设置图标-报警-疲劳驾驶_800X480.png"
+IDR_PNG_CONFIG_ALARM_BATTERY_VOLTAGE_800X480 PNG                     "res\\800X480\\设置图标-报警-电瓶电压_800X480.png"
+IDR_PNG_BASE_800X480    PNG                     "res\\800X480\\base_800X480.png"
+IDR_PNG_BASE_480X272    PNG                     "res\\480X272\\base_480X272.png"
+IDR_PNG_LOGO_800X480    PNG                     "res\\800X480\\开机LOGO_800X480.png"
+IDR_PNG_EDIT_VALUE_800X480 PNG                     "res\\800X480\\数值输入_800X480.png"
+IDR_PNG_WIDGET_EDITTEXT_800X480 PNG                     "res\\800X480\\控件-文本输入框_800X480.png"
+IDR_PNG_DEVICE_SETUP_800X480 PNG                     "res\\800X480\\仪器安装-底_800X480.png"
+IDR_PNG_UNIT_Kpa_800X480 PNG                     "res\\800X480\\单位_Kpa_800x480.png"
+IDR_PNG_MINISPEEN_800X480 PNG                     "res\\800X480\\MiniDlg_800X480.png"
+IDR_PNG_CONFIG_DEVICES_PROTOCOL_800X480 PNG                     "res\\800X480\\设置图标_多协议设置_800X480.png"
+IDR_PNG_UNIT_G_S_800X480 PNG                     "res\\800X480\\单位_g_s_800x480.png"
+IDR_PNG_CONTROL_EDIT_NUM_800X480 PNG                     "res\\800X480\\控件-数值输入框_800X480.png"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\OBD_PND.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

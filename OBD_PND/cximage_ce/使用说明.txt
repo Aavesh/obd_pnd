@@ -1,0 +1,20 @@
+将cximage_ce目录解压到 项目目录
+包含include和lib目录，链接依赖里加上 cximage.lib jasper.lib jbig.lib jpeg.lib png.lib tiff.lib zlib.lib
+
+
+运行的时候有个0xC00000FD内存错误，是栈空间太小了
+工程属性-〉Link-〉Stack 
+Reserve -〉0x100000(1M)
+commit-> 0x1000(4K)
+
+
+使用示例
+
+HRSRC hRsrc = ::FindResource(hInstance, MAKEINTRESOURCE(nIDResource), lpType); 
+if (!hRsrc)
+	return;
+CxImage ximage;
+if(!ximage.LoadResource(hRsrc,CXIMAGE_FORMAT_PNG))
+	return;
+
+ximage.Draw(dcMem->GetSafeHdc(),0,0,rect.Width(),rect.Height());
